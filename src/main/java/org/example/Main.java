@@ -30,8 +30,14 @@ public class Main {
                 System.out.println("Withdraw money");
                 System.out.println("Hou much money do you want to withdraw?");
                 int withdraw= sc.nextInt();
-                user.withdraw(withdraw);
-                System.out.println("Your current balance is " + user.getBalance());
+                if (user.getBalance()>=withdraw){
+                    user.withdraw(withdraw);
+                    System.out.println("Your current balance is " + user.getBalance());
+                }
+                else {
+                    System.out.println("We can't do this operation because you account balance is under withdraw value");
+                }
+
                 break;
         }
 
