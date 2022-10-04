@@ -38,7 +38,6 @@ public class Main {
                     } else {
                         System.out.println("We can't do this operation because you account balance is under withdraw value");
                     }
-
                     break;
                 case 4:
                     System.out.println("Exit program");
